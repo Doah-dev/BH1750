@@ -112,9 +112,27 @@ If not:
 
 Compile and run test program
 
-`gcc -o test_bh1750 test_bh1750.c`
+`gcc BH1750_test.c -o test`
 
-`sudo ./test_bh1750`
+`sudo ./test`
+
+If you encounter errors such as:
+
+`Failed to open device: No such file or directory`
+
+→ This means `/dev/BH1750` does not exist. Please check the following:
+
+Have you loaded the driver using `insmod BH1750_driver.ko`?
+
+Use `dmesg | grep BH1750` to check kernel logs for any error or status messages related to the driver.
+
+`Failed to read light data`
+
+→ This could be due to:
+
+The sensor is not ready yet (you may need to add a delay after powering it on).
+
+An incorrect measurement mode or a wrong `ioctl` command was used.
 
 # Advanced IOCTL Commands
 You can call different modes by replacing `IOCTL_READ_One_H_Mode1` with:
