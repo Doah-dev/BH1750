@@ -1,4 +1,4 @@
-# BH1750 Driver
+# BH1750 Driver - Detailed User Guide
 # Contributors
 Doan Nhat Hao - 22146114
 
