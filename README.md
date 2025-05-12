@@ -1,4 +1,10 @@
 # BH1750 Driver
+# Contructors
+Doan Nhat Hao - 22146114
+
+Hoang Xuan Son - 22146210
+
+Nguyen Quang Thinh - 21146901
 # Overview
 The BH1750 is a digital light intensity sensor (lux meter) manufactured by ROHM Semiconductor. This sensor uses the I2C communication interface, allowing digitized light intensity data (in lux) to be transmitted directly to a microcontroller without the need for analog signal processing.
 
