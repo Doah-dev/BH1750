@@ -48,7 +48,7 @@ Wiring up the GY-30 sensor board to an Raspberry is shown in the diagram below.
 
 # Device Tree Overlay Setup
 - Enable I2C (on Raspberry Pi)
-- 
+
 `sudo raspi-config`
 
 Interface Options → I2C → Enable
