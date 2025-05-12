@@ -1,10 +1,4 @@
 # BH1750 Driver - Detailed User Guide
-# Contributors
-Doan Nhat Hao - 22146114
-
-Hoang Xuan Son - 22146210
-
-Nguyen Quang Thinh - 21146901
 # Overview
 The BH1750 is a digital light intensity sensor (lux meter) manufactured by ROHM Semiconductor. This sensor uses the I2C communication interface, allowing digitized light intensity data (in lux) to be transmitted directly to a microcontroller without the need for analog signal processing.
 
@@ -153,7 +147,7 @@ You can call different modes by replacing `IOCTL_READ_One_H_Mode1` with:
 | `IOCTL_READ_One_L_Mode`           | 0x23 | 4 lx, one-shot     |
 
 # Notes and Troubleshooting
-Use i2cdetect -y 1 to verify the sensor is detected.
+Use `i2cdetect -y 1` to verify the sensor is detected.
 
 The address should match your overlay (either 0x23 or 0x5C).
 
@@ -165,7 +159,18 @@ Sensor auto powers off after one-shot mode.
 `sudo rmmod BH1750_driver`
 
 `make clean`
+# Author Info
+- Contributors:
 
+  Doan Nhat Hao - 22146114
+
+  Hoang Xuan Son - 22146210
+
+  Nguyen Quang Thinh - 21146901
+
+- Project: Linux Kernel Driver for BH1750 Sensor
+
+- Features: ioctl interface, power control, measurement time config, multi-mode light reading
 
 
 
