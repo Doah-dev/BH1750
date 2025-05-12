@@ -1,5 +1,5 @@
 # BH1750 Driver
-# Contructors
+# Contributors
 Doan Nhat Hao - 22146114
 
 Hoang Xuan Son - 22146210
